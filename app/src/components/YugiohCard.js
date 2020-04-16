@@ -16,11 +16,11 @@ const YugiohCard = props => {
             {props.isFetching && (
                 <Loader type="Puff" color="#00BFFF" height={100} width={100} />
             )}
-            {props.name && <h2>{props.name}</h2>}
             <div className="imgDiv">
               {props.image && <img src={props.image} />}
             </div>
             <div className="infoDiv">
+                {props.name && <h2>{props.name}</h2>}
                 {props.type && <span>{props.type}</span>}
                 {props.desc && <p>{props.desc}</p>}
                 {props.error && <p className="error">{props.error}</p>}

@@ -46,10 +46,19 @@ body {
   background-color: black;
 }
 
+.cardDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .infoDiv {
 color: black;
 background-color: white;
+width: 50%;
+border-radius: 15px;
+padding: 5px 30px;
 }
 
 h1 {
@@ -59,8 +68,9 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: black;
   font-size: 4rem;
+  margin: 0 0;
 }
 
 
